@@ -4,7 +4,7 @@
     <h5 class="text-muted">Powered by Vue.js</h5>
     <hr>
     <TranslateForm v-on:formSubmit="translateText"></TranslateForm>
-    <Translateoutput v-text="translateText"></Translateoutput>
+    <Translateoutput v-text="translatedText"></Translateoutput>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
   },
   data: function(){
     return{
-      translateText:''
+      translatedText:''
     }
   },
   methods: {
